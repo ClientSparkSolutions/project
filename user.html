@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap"
+      rel="stylesheet"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="user.css" type="text/css" />
+    <title>Expense Calculator</title>
+	 
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="user-profile">
+        <img src="C:\Users\user\Downloads\user1.png" class="user-image">
+        <div class="user-info">
+          <h1 class="user-name">user1</h1>
+        </div>
+      </div>
+      <p>Categories</p>
+      <div class="container" id="topContainer">
+        <div class="title">Chicken</div>
+        <div class="inputContainer">
+          <span>Price/kg &#8377;</span>
+          <input
+            onkeyup="calculateBill()"
+            type="text"
+            id="chickenprice"
+            placeholder="0.00"
+          /><br></div><div class="inputContainer">
+		  <span>Quantity : </span> <input
+            onkeyup="calculateBill()"
+            type="text"
+            id="chickenquantity"
+            placeholder="0"
+          />
+        </div>
+        <div class="title">Mutton</div>
+        <div class="inputContainer">
+          <span>Price/kg &#8377;</span>
+          <input
+            onkeyup="calculateBill()"
+            type="text"
+            id="muttonprice"
+            placeholder="0.00"
+          /><br></div><div class="inputContainer">
+		  <span>Quantity : </span><input
+            onkeyup="calculateBill()"
+            type="text"
+            id="muttonquantity"
+            placeholder="0"
+          />
+        </div>
+        <div class="title">Groceries</div>
+        <div class="inputContainer">
+          <span>&#8377;</span>
+          <input
+            onkeyup="calculateBill()"
+            type="text"
+            id="groceriesprice"
+            placeholder="0.00"
+          /></div><div class="inputContainer"><textarea
+            
+            id="groceriesnotes"
+            placeholder="Groceries notes"
+          /></textarea>
+        </div>
+        <div class="title">Vegetables</div>
+        <div class="inputContainer">
+          <span>&#8377;</span>
+          <input
+            onkeyup="calculateBill()"
+            type="textarea"
+            id="vegetablesprice"
+            placeholder="0.00"
+          /></div><div class="inputContainer"><textarea
+            type="text"
+            id="vegnotes"
+            placeholder="Vegetables notes"
+          /></textarea>
+        </div>
+        <div class="title">Fruits</div>
+        <div class="inputContainer">
+          <span>&#8377;</span>
+          <input
+            onkeyup="calculateBill()"
+            type="textarea"
+            id="fruitsprice"
+            placeholder="0.00"
+          /></div><div class="inputContainer"><textarea
+            type="text"
+            id="fruitsnotes"
+            placeholder="Fruits notes"
+          /></textarea>
+        </div>
+      </div>
+     
+
+        
+	<script>
+        function calculateBill() {
+          // Get the values of the input fields
+          var groceries = document.getElementById("groceriesprice").value;
+          var chiken = document.getElementById("chickenprice").value;
+          var mutton = document.getElementById("muttonprice").value;
+          var vegetables = document.getElementById("vegetablesprice").value;
+          var fruits = document.getElementById("fruitsprice").value;
+		  
+          var chikenqua = document.getElementById("chickenquantity").value;
+          var muttonqua = document.getElementById("muttonquantity").value;
+         
+        
+          // Convert the values to numbers
+          groceries = parseFloat(groceries);
+          chiken = parseFloat(chiken);
+          mutton = parseFloat(mutton);
+          vegetables = parseFloat(vegetables);
+          fruits = parseFloat(fruits);
+		 
+          chikenqua = parseInt(chikenqua);
+          muttonqua = parseInt(muttonqua);
+          
+        
+          // Add up all the values to get the total bill
+          var totalBill = groceries + chiken*chikenqua + mutton*muttonqua + vegetables + fruits;
+        
+          // Display the total bill
+         document.getElementById("perPersonTotal").innerHTML = totalBill;
+		  
+        }
+        </script>
+
+   
+         <!--<button class="buttonContainer"onclick="calculateBill()">Calculate Bill</button>-->
+		 
+		 <div class="totalContainer">
+          <div class="title">Overall Expenses :</div>
+          <div class="total" id="perPersonTotal">&#8377;0.00</div>
+        </div>
+      </div>
+    </div>   
+		
+       
+  </body>
+</html>

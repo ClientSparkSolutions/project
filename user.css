@@ -1,0 +1,136 @@
+*. {
+  overflow: hidden;
+}
+
+{
+  font-family: 'M PLUS Rounded 1c', Avenir Next, Helvetica, sans-serif;
+  color: white;
+}
+
+body {
+  background: #8990ec;
+}
+
+.wrapper {
+  height: 800px;
+  width: 360px;
+  color: white;
+  background: #272639;
+  border-radius: 1rem;
+  padding: 1.2rem;
+  margin: 100px auto;
+}
+
+#topContainer {
+  margin-top: 1rem;
+}
+
+.container {
+  margin-top: 1.4rem;
+}
+
+.title {
+  font-weight: bold;
+  margin-bottom: 0.6rem;
+}
+
+.inputContainer {
+  background: #353959;
+  border-radius: 1.4rem;
+  padding: 0 0.8rem;
+  display: flex;
+  align-items: center;
+  line-height:1.5;
+  margin-bottom: 0.6rem;
+}
+
+
+
+#billTotalInput,
+#chickenprice,#chickenquantity,#muttonprice,#muttonquantity,#groceriesprice,#vegetablesprice,#fruitsprice,#groceriesnotes,#vegnotes,#fruitsnotes,
+#tipInput {
+  font-size: 1.2rem;
+  background: none;
+  border: none;
+  outline: none;
+  padding: none;
+}
+
+.buttonContainer {
+  
+  background: #353959;
+  border-radius: 1.4rem;
+  padding: 0.9rem;
+  display: flex;
+  align-items: center;
+  margin-left:7rem;
+  
+}
+
+.splitButton2 {
+  background: none;
+  border: none;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+}
+
+.splitButton {
+  font-size: 0.8rem;
+  font-weight: bold;
+  display: grid;
+  place-items: center;
+}
+
+.buttonText {
+  color: #86e610 !important;
+}
+
+.splitAmount {
+  font-size: 1.6rem;
+  margin: 0.8rem;
+}
+
+#bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.totalContainer {
+  background: #353959;
+  border-radius: 1.4rem;
+  padding: 0 0.8rem;
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.total {
+  font-size: 1.5rem;
+}
+.user-profile {
+  display: flex;
+  align-items: center;
+}
+
+.user-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* makes the element a circle */
+  overflow: hidden; /* hides anything that exceeds the element's bounds */
+}
+
+
+
+.user-info {
+  margin-left: 10px;
+}
+
+.user-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
