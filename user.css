@@ -2,7 +2,7 @@
   overflow: hidden;
 }
 
-{
+. {
   font-family: 'M PLUS Rounded 1c', Avenir Next, Helvetica, sans-serif;
   color: white;
 }
@@ -13,7 +13,7 @@ body {
 
 .wrapper {
   height: 800px;
-  width: 360px;
+  width: 400px;
   color: white;
   background: #272639;
   border-radius: 1rem;
@@ -43,8 +43,6 @@ body {
   line-height:1.5;
   margin-bottom: 0.6rem;
 }
-
-
 
 #billTotalInput,
 #chickenprice,#chickenquantity,#muttonprice,#muttonquantity,#groceriesprice,#vegetablesprice,#fruitsprice,#groceriesnotes,#vegnotes,#fruitsnotes,
@@ -133,4 +131,24 @@ body {
   font-weight: bold;
 }
 
+.dashboard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dashboard-item {
+    text-align: center;
+    width: 30%;
+}
+
+.amount {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.label {
+    font-size: 18px;
+    color: gray;
+}
 
